@@ -3,7 +3,7 @@ const {
   getCookie
 } = require('../helper')
 
-exports.addGoogleAnalytics = ({ trackingId }) => {
+exports.addGoogleAnalytics = (trackingId) => {
   return new Promise((resolve, reject) => {
     if (window.gatsbyPluginGDPRCookiesGoogleAnalyticsAdded) return resolve(true)
 
